@@ -122,7 +122,7 @@ cursor: pointer;
     min-height: 100vh;
     max-width: 80vw;
     margin:0 auto;
-    border:1px solid black;
+    /* border:1px solid black; */
 }
 
 @media only screen and (max-width:1200px) {
@@ -153,3 +153,86 @@ cursor: pointer;
         cursor: pointer;
     }
 }
+
+/* rent property */
+
+.rent-listning{
+    min-height:90vh;
+    max-width:78vw;
+    /* border:1px solid black; */
+    margin:10px auto;
+}
+.rent-property{
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 10px 10px;
+}
+.rent-items{
+height:350px;
+border-radius: 5px;
+border:1px solid black;   
+transition: 0.8s all;
+}
+.rent-items:hover{
+    box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.3),
+    -2px -2px 5px 0 rgba(0,0,0,0.3);
+}
+.rent-items .img{
+    height:60%;
+    width:100%;
+}
+.rent-items .img img{
+    width:100%;
+    height:100%;
+}
+.rent-items .des{
+    height:40%;
+}
+.des .info{
+    height:70%;
+    /* border: 1px solid black; */
+}
+.des .footer-info{
+    height:30%;
+    border-top: 2px dotted brown;
+}
+.footer-info span{
+    margin:0 10px;
+}
+.footer-info button{
+    margin:0 10px;
+    padding:10px 30px;
+    border:1px solid black;
+    border-radius: 5px;
+    text-transform: capitalize;
+    background:transparent;
+    transition: .8s all;
+    cursor: pointer;
+}
+.footer-info button:hover{
+    color:white;
+    background:brown;
+}
+.des .info .info-prop{
+    width:50%;
+    /* border:1px solid green; */
+}
+.info-prop span{
+    color:brown;
+    margin:10px 20px;
+}
+.info-prop h3{
+    color:black;
+    margin:10px 20px; 
+}
+.des .info .prop-price{
+    width:50%;
+    /* border:1px solid red; */
+}
+.prop-price span{
+    padding:10px 20px;
+    border:black;
+    background:brown;
+    color:white;
+    border-radius: 5px;
+}
+/* rent property end */

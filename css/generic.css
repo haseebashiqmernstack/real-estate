@@ -26,3 +26,6 @@ display:flex;
 .flex-justify-sa{
  justify-content:space-around;
 }
+.grid{
+  display: grid;
+}
