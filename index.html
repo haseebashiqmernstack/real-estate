@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/generic.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+    <div class="mobile-responsive">
+        <div class="menu-symble">=</div>
+    </div>
+<div class="whole-menu">
+    <div class="logo">
+        
+            <img src="./images/logo.jpeg" alt="">
+                <!-- -->
+    </div>
+    <div class="menu-header flex flex-row">
+        <div class="left-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li id="drop"><a href="#">Provinces</a></li>
+                <li><a href="#">New Listenings</a></li>
+            </ul>
+        </div>
+        <div class="right-menu">
+            <ul>
+              
+                <li><a href="#">About</a></li>
+                <li><a href="#" id="cnl">Create Listenings</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- <ul class="dropdown">
+    <li><a href="#">Punjab</a></li>
+    <li><a href="#">Sindh</a></li>
+    <li><a href="#">Blochistan</a></li>
+    <li><a href="#">KPK</a></li>
+</ul> -->
+    <header>
+        
+    </header>
+
+    <section class="home">
+
+    </section>
+    <script>
+         var mR=document.querySelector(".mobile-responsive");
+        var mbtn=document.querySelector(".menu-symble");
+        mbtn.addEventListener("click",function(){
+            var mheight="10vh";
+            // alert("asslam o alaikum")
+            if(mR.style.height==="" || mR.style.height===mheight)
+         {
+            //  alert(mR.style.height)
+            mR.style.zIndex="10000";
+               mR.style.height="100vh";
+         }   
+         else if(mR.style.height==="100vh"){
+            // alert(mR.style.height)
+            mR.style.zIndex="10000";
+              mR.style.height="10vh";
+         }
+        })
+    </script>
+</body>
+</html>
